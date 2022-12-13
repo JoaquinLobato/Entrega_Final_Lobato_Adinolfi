@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Gastronomia/css/about.css' %}">
+    <title>About me</title>
+</head>
+<body>
+{% for bar in object_list %}
+
+    <ul>
+        <li>
+            <p>Nombre: {{bar.nombre}}, Especialidad: {{bar.especialidad}}, Descripcion: {{bar.breve_descripcion}}</p>
+            <button>
+                <a href="{% url 'Bar Detalle' bar.id %}"> Ver Detalles</a>
+            </button>
+            
+            {% if request.user.is_authenticated %}             
+                <button>
+                    <a href="{% url 'Edit Bar' bar.id %}">Actualizar</a>
+                </button>     
+                <button>
+                    <a href="{% url 'Delete Bar' bar.id %}">Eliminar</a>
+                </button>             
+        
+            {% endif %}
+    </ul>
+
+{% endfor %}
+
+<div class="boton_about">
+    <a class="btn btn-primary" href="{% url 'Pages' %}">Volver a la pagina anterioro</a>
+</div>
+</body>
+</html>

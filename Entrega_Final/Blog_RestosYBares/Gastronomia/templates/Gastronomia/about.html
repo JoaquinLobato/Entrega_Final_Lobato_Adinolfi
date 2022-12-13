@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Gastronomia/css/about.css' %}">
+    <title>About me</title>
+</head>
+<body>
+    <h1 class="titulo_about">About me</h1>
+    <p class="parrafo_about">
+        Soy Joaquin Lobato Adinolfi, tengo 22 años y soy de Capital Federal, Argentina. Desde los 18, cuando adquiri la legalidad de poder tomar, comenze a recorrer bares y restaurantes ya que me apasiona el conocer nuevos gustos y lugares; probar como, de un lugar a otro, el mismo trago o plato puede ser completamente distinto al anterior. Por ende, decidi realizar este blog. Que este sea de guia, de recomendacion y de conocimiento para aquellos que buscan nuevos lugares y experiencias.  En cuanto a mi transfondo de programacion y desarrollo, soy desarrollador Web (HTML/CSS/Bootstrap) con certificado de CoderHouse y actualmente estoy cursando programacion en Python en CoderHouse tambien; cuyo proyecto final es este mismo Blog. 
+    </p>
+    <div class="boton_about">
+        <a class="btn btn-primary" href="{% url 'Home' %}">Volver al Inicio</a>
+    </div>
+</body>
+</html>

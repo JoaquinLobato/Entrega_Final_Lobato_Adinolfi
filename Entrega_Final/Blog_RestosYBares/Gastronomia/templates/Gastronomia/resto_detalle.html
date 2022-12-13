@@ -1,0 +1,15 @@
+<p>Nombre: {{object.nombre}}, Especialidad: {{object.especialidad}}, Locacion: {{object.locacion}}, Horario de Apertura: {{object.horario_apertura}}, Horario de Cierre: {{object.horario_cierre}}, Descripcion: {{object.breve_descripcion}}</p>
+
+<div>
+    <img src= "{{object.imagen.url}}" >
+</div>
+<button>
+    <a href="{% url 'Ver Restaurantes' %}"> Volver a lista de restaurantes</a>
+</button>
+<style>
+    img{height: auto;
+
+        max-width: 80%;}
+</style>
+
+    

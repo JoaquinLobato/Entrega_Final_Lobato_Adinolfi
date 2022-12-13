@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Gastronomia/css/about.css' %}">
+    <title>About me</title>
+</head>
+<body>
+    <section>
+        <h2>Restaurantes</h2>
+        <div>
+            <a class="btn btn-primary" href="{% url 'Ver Restaurantes' %}">Ver Restaurantes</a>
+        </div>
+        <h2>Bares</h2>
+        <div>
+            <a class="btn btn-primary" href="{% url 'Ver Bares' %}">Ver Bares</a>
+        </div>
+    </section>
+    <div class="boton_about">
+        <a class="btn btn-primary" href="{% url 'Home' %}">Volver al Inicio</a>
+    </div>
+</body>
+</html>

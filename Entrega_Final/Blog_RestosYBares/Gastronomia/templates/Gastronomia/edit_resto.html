@@ -1,0 +1,10 @@
+<form action="" method="post"> {% csrf_token %}
+
+    <h3>Subir informacion del restaurante</h3>
+
+    <table>
+        {{form.as_table}}
+    </table>
+
+    <button type="submit" value="Enviar">Enviar</button>
+</form>
